@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #000428, #004e92);
+    color: white;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.profile {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: .5s;
+}
+
+.profile:hover {
+    transform: scale(1.1);
+}
+
+.subtitle {
+    margin-top: 15px;
+}
+
+.research {
+    margin-top: 10px;
+}
+
+.buttons {
+    margin-top: 30px;
+}
+
+.buttons a,
+.resume-button {
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 12px 25px;
+    border-radius: 30px;
+    margin: 10px;
+    display: inline-block;
+}
+
+section {
+    padding: 60px 10%;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card,
+.box {
+    background: rgba(255, 255, 255, .1);
+    backdrop-filter: blur(10px);
+    padding: 25px;
+    border-radius: 20px;
+    transition: .5s;
+}
+
+.card:hover {
+    transform: perspective(1000px) rotateY(15deg);
+}
+
+.dashboard {
+    text-align: center;
+}
+
+.dashboard img {
+    width: 100%;
+    max-width: 1000px;
+    border-radius: 20px;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin: 10px 0;
+}
+
+footer {
+    text-align: center;
+    padding: 60px;
+}
+section {
+
+    opacity: 0;
+
+    transform: translateY(50px);
+
+    transition: all 0.8s ease;
+
+}
+
+section.show {
+
+    opacity: 1;
+
+    transform: translateY(0);
+
+}
